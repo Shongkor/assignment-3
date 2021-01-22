@@ -1,13 +1,20 @@
-// kilometerToMeter start
-function kilometerToMeter(addKilometer) {
-    if (typeof addKilometer != 'number') {
-        return "Plz give me a num";
-    } else if (0 <= addKilometer) {
-        return addKilometer * 1000; //1km=1000m;
-    } else {
-        return "plz give me valid number"
+https: //github.com/Shongkor/assignment-3
+
+
+
+
+
+
+    // kilometerToMeter start
+    function kilometerToMeter(addKilometer) {
+        if (typeof addKilometer != 'number') {
+            return "Plz give me a num";
+        } else if (0 <= addKilometer) {
+            return addKilometer * 1000; //1km=1000m;
+        } else {
+            return "plz give me valid number"
+        }
     }
-}
 
 // kilometerToMeter end
 
@@ -26,7 +33,7 @@ function budgetCalculator(noOfWatch, noOfPhone, noOfLaptop) {
 
 //hotelCost start
 function hotelCost(noOfDay) {
-    if (typeof noOfDay != 'number' || noOfDay%1!=0) {
+    if (typeof noOfDay != 'number' || noOfDay % 1 != 0) {
         return "plz input a whole number"
     }
     if (noOfDay <= 10) {
@@ -45,20 +52,21 @@ function hotelCost(noOfDay) {
 
 //megaFriend start
 function megaFriend(arr) {
-    if(arr.length!=0){
-        var largest=arr[0];
-        for(var i=0;i<arr.length;i++){
-            if(arr[i].length>largest.length){
-                largest=arr[i];
-            }  
-        }var name=largest;
-        if(typeof largest != 'string'){
+    if (arr.length != 0) {
+        var largest = arr[0];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].length > largest.length) {
+                largest = arr[i];
+            }
+        }
+        var name = largest;
+        if (typeof largest != 'string') {
             return "Array elements are must be string";
-        }else{
+        } else {
             return largest;
         }
 
-    }else{
+    } else {
         return "Sorry! You have no friend."
     }
 }
